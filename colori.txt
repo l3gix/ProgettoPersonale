@@ -1,0 +1,3 @@
+#415a77 scuro  364a62 per ombra
+#778da9 + chiaro
+#e0e1dd bianco
