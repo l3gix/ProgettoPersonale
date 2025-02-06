@@ -1,1 +1,12 @@
-<p>operation works!</p>
+<div class="serch-bar">
+    <input type="text">
+</div>
+<div class="container" [ngStyle]="{ 'overflow-y': scrollEnabled ? 'scroll' : 'hidden' }">
+    <div class="operazioni" >
+        <div *ngFor="let operazioni of listoperazioni" class="card">
+            <p> {{operazioni.importo | currency: 'EUR'}}</p>
+            <p> Date : {{getDate(operazioni) | date: 'dd/MM/yyyy'}}</p>
+        </div>
+    </div>
+</div>
+

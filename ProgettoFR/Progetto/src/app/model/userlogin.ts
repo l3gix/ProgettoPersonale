@@ -1,4 +1,5 @@
-export class User 
+
+export class UserLogin
 {
     private username!: string;
     private password!: string;

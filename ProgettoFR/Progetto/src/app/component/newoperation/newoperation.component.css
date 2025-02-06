@@ -1,0 +1,89 @@
+.container
+{
+    height: 550px; /* Altezza fissa del contenitore */
+    width: 1000px;
+    /*background-color: aquamarine;*/
+}
+
+.input-container
+{
+    height: 300px; /* Altezza fissa del contenitore */
+    width: 1000px;
+    /*background-color: rgb(195, 127, 255);*/
+}
+.input-data 
+{
+    height: 150px; /* Altezza fissa del contenitore */
+    width: 1000px;
+    background-color: #415a77;
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+.input-check 
+{
+    height: 150px; /* Altezza fissa del contenitore */
+    width: 1000px;
+    background-color: #778da9;
+    display: flex;
+    align-items: center;
+}
+
+.input-data >input
+{
+    margin-left: 50px;
+    width: 25%;
+    height: 30px;
+    font-family: poppins;
+    border-radius: 20px;
+    padding: 10px;
+    border : none;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.input-check > select
+{
+    margin-left: 100px;
+    width: 50%;
+    height: 30px;
+    font-family: poppins;
+    border-radius: 20px;
+    border : none;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.input-check > select > option
+{
+    font-family: poppins;
+}
+
+.button-container
+{
+    height: 200px; /* Altezza fissa del contenitore */
+    width: 1000px;
+    background-color: #778da9;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.button-container > button
+{
+
+    height: 50px;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: poppins;
+    margin-left: 100px;
+    border: none;
+    background-color: #415a77;
+    color: white;
+}
+.button-container > button:hover
+{
+    background-color: #364a62;
+    cursor: pointer;
+}

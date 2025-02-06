@@ -8,7 +8,7 @@ import { serverRoutes } from './app.routes.server';
 @NgModule({
   imports: [AppModule, 
     ServerModule,
-    
+    ServerModule,
   ],
   providers: [provideServerRouting(serverRoutes)],
   bootstrap: [AppComponent],

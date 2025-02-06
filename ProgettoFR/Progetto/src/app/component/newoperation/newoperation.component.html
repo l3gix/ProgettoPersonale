@@ -1,1 +1,21 @@
-<p>newoperation works!</p>
+<form [formGroup]="operationGroup" (ngSubmit)="transition()">
+<div class="container">
+    <div class="input-container">
+        <div class="input-data">
+            <input type="text" placeholder="Importo" formControlName="importo"
+            [ngStyle]="{'border': validateInputControl(operationGroup , 'importo') ? '3px solid red' : ''}"
+            >
+            <input type="date" placeholder="Data" formControlName="data">
+        </div>
+        <div class="input-check">
+            <select id="type" name="lvl" formControlName="type">
+                <option value="credit">Credit</option>
+                <option value="debit">Debit</option>
+            </select>
+        </div>
+    </div>
+    <div class="button-container">
+        <button type="submit" [disabled]="!operationGroup.valid " >Esegui</button>
+    </div>
+</div>
+</form>

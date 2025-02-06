@@ -47,9 +47,15 @@
         <div class="register">
             <p>Non sei ancora registrato?, <a routerLink="/register">Registrati</a></p>
         </div>
+        
         <div class="register" 
         *ngIf="(validateInputControl(homeGroup , 'username') || validateInputControl(homeGroup , 'password')) ">
             <p style="color:white;font-size:30px;">Inserire Tutti i campi</p>
+        </div>
+
+        <div class="register"
+        *ngIf="getErrorLogin()">
+            <p style="color:red;font-size:20px;">Errore Nel Login</p>
         </div>
 
     </div>

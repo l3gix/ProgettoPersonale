@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms'; 
+import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,9 +30,12 @@ import { NewoperationComponent } from './component/newoperation/newoperation.com
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+
+    
   ],
   providers: [
-    provideClientHydration(withEventReplay())
+    provideHttpClient(withFetch()),
   ],
   bootstrap: [AppComponent]
 })
